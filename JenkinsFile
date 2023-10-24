@@ -1,0 +1,31 @@
+#!/bin/groovy
+pipeline {
+    agent any
+  tools {
+    nodejs 'Node'
+  }
+  stages {
+    stage('Startup') {
+      steps {
+        script {
+          echo ' Installing NPM'
+          sh 'npm install'
+        }
+      }
+    }
+    stage('Test') {
+      steps {
+        script {
+          echo ' Runing Test'
+          sh 'npm run test'
+        }
+      }
+      post {
+        always {
+          step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
+        }
+      }
+    }
+
+  }
+}

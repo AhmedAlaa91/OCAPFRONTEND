@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/orangeHelvetica.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/orangeIcons.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/core3.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/boosted.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-expand-md ftco_navbar bg-dark ftco-navbar-light"
+        id="ftco-navbar">
+        <div class="container-fluid" style="margin-left: 5%;margin-right: 5%;">
+            <a class="navbar-brand" href="{% url 'pages.home' %}">
+                <img src="{% static 'images/orange_logo.svg' %}" alt="Back to homepage" title="Back to homepage"
+                    width="50" height="50" />
+                Car<span class="text-primary">POOL</span></a>
+               <div class="navbar-brand d-flex justify-content-center">
+                <div class="col-2 d-flex justify-content-center">
+                     <img src="{% static 'images/co2.png' %}" alt="Back to homepage" title="Back to homepage"
+                    width="30" height="30" />
+                </div>
+                    <div class="col-10 d-flex justify-content-center pt-3">
+               <span class="text-primary" style="margin-left: -10px;"> <span class="text-white text-bold" style="text-transform: none;">Kg<br><span style="color:white; font-size:10px"> CO2 Saved</span></span> </span>
+                    </div>
+               </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="{% url 'pages.home' %}" class="nav-link">Home</a></li>
+                   
+                        <li class="nav-item"><a href="{% url 'pages.rides' %}" class="nav-link">Join Ride</a></li>
+                        <li class="nav-item"><a  href="{% url 'website.ride' %}" class="nav-link">Create Ride</a></li>
+                        <li class="nav-item"><a  href="{% url 'website.myrides' %}" class="nav-link">My Rides</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              
+                    <li class="nav-item">
+                        <button type="button"
+                            class="nav-link btn btn-link btn-inverse dropdown-toggle d-flex align-items-center mr-0"
+                            data-toggle="dropdown">
+                            <span class="svg-avatar mr-1" aria-hidden="true"></span>
+                            <span>Hello
+                          
+                                    <span class="text-primary capitalize" style="background-color: transparent;"></span>
+                              
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu mt-4" style="left: auto;">
+                         
+                                <li><a class="dropdown-item" href="{% url 'website.profile' %}">Profile</a></li>
+                                <li><a class="dropdown-item" href="{% url 'pages.mycars' %}">My Car</a></li>
+                        
+                            <li><a class="dropdown-item" href="{% url 'website.login' %}">Login</a></li>
+                       
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="messages" style="padding-top: 100px;">
+  
+      
+
+    </div>
+
+    <main id="content" style="width: 100%; padding-bottom:0px; background:none; margin-top: 0px; padding-top: 100px;min-height:85vh" >
+        <div id="pageContent" style="background:none; margin-top: 2%;" >
+ 
+        </div>
+    </main>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style="padding: 0em 0em;">
+        <div class="container-fluid" style="margin-left: 5%;
+        margin-right: 5%;">
+            <div class="row mb-2" style="margin-bottom: 0px !important;">
+                <div class="col-md">
+                    <div class="ftco-footer-widge">
+                        <h1 class="ftco-heading-2" style="font-size:20px; margin-top:5%;margin-bottom:5%;"><a href="#" class="logo">Car<span>Pool</span></a></h1>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2" style="text-align: center; margin-top:5%;margin-bottom:5%;margin-right: 10%;"><a href="#"><span style="font-size: 17px;
+                            color: white;">Contact us</span></a></h2>
+                    </div>
+                </div>
+                <div class="col-md" style="text-align: right;
+                margin-right: 4%;">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2" style="margin-top:5%;margin-bottom:5%;"><a href="#"><span style="font-size: 17px;
+                            color: white;">Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script></span></a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+ 
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/boosted.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'js/scrollax.min.js' %}"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+    <!-- <script src="{% static 'js/google-map.js' %}"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js" integrity="sha384-QnFIXbEfAgO7z63b/aNzTSdSNLoNiNX/mk/Ok+NpUNMnvriWLo5cOtB0OUCAdKNu" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" integrity="sha384-XnTxmviuqUy3cHBf+lkYWuTSDlhxCDxd9RgSo5zvzsCq93P9xNa6eENuAITCwxNh" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
