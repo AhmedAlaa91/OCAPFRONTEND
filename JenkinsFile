@@ -1,31 +1,32 @@
 #!/bin/groovy
 pipeline {
     agent any
-  tools {
+tools {
     nodejs 'Node'
   }
   stages {
-    stage('Startup') {
+    stage('build') {
       steps {
-        script {
+        
           echo ' Installing NPM'
-          sh 'npm install'
-        }
+          bat 'npm install'
+        
       }
     }
     stage('Test') {
       steps {
-        script {
+        
           echo ' Runing Test'
-          sh 'npm run test'
-        }
+          bat 'set CI=true && npm run test'
+        
       }
-      post {
-        always {
-          step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
-        }
-      }
+    
+    
+    }
+    
+    
     }
 
   }
-}
+
+

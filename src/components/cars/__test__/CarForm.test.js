@@ -1,5 +1,5 @@
 import {render , screen} from '@testing-library/react';
-import CarForm  ,{formattnumber} from '../cars/CarForm';
+import CarForm  ,{formattnumber} from '../CarForm';
 import userEvent from "@testing-library/user-event";
 
 describe('Testing Car Form Components',()=>{

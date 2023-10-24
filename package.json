@@ -21,10 +21,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --verbose --coverage --coverageDirectory=output/coverage/jest",
+    "test": "react-scripts test --testMatch **/src/**/*.test.js  --verbose --coverage --coverageDirectory=output/coverage/jest",
     "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -50,6 +49,6 @@
   "jest": {
  
     "collectCoverageFrom": ["src/components/cars/*.jsx", "!src/index.js"],
-    "coverageReporters": ["text","cobertura"]
+    "coverageReporters": ["text"]
   }
 }
