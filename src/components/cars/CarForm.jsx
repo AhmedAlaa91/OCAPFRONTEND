@@ -19,7 +19,7 @@ import  '../../static/css/orangeIcons.min.css';
 import  '../../static/css/owl.theme.default.min.css';
 import styled from 'styled-components';
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-
+import { motion,    AnimatePresence } from "framer-motion"
 function CarForm() {
 
 const [ccNumber, setCcNumber] = useState('');
@@ -41,11 +41,11 @@ const [ccNumber, setCcNumber] = useState('');
 
     setCcNumber(spacedNumber);
   };
-
+ 
 
 
   return (
- 
+    <motion.div initial={{ x: '100vw'}}  animate={{ x:'0'}} transition={{ type:'spring' , delay:'0.5' , stiffness:'50'}} >
     <div class="container-xxl pt-4">
     <div class="row">
       <div class="col-sm-12 col-lg-5 offset-lg-3">
@@ -129,6 +129,8 @@ const [ccNumber, setCcNumber] = useState('');
       </div>
     </div>
   </div>
+  </motion.div>
+
   )
 }
 

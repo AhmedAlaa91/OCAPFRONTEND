@@ -59,20 +59,7 @@ function Navbar() {
             <span className="visually-hidden">Search</span>
           </a>
         </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link nav-icon">
-            <svg width="1.5rem" height="1.5rem" fill="currentColor" aria-hidden="true" focusable="false" className="overflow-visible">
-            
-            </svg>
-            <span className="visually-hidden">Basket</span>
-            <span className="position-relative align-self-start">
-              <span className="badge bg-info rounded-pill position-absolute top-0 fs-6 text-white translate-middle">
-                1
-                <span className="visually-hidden">shopping basket items</span>
-              </span>
-            </span>
-          </a>
-        </li>
+
         <li className="nav-item">
         <button type="button"
                             className="nav-link btn btn-link btn-inverse dropdown-toggle d-flex align-items-center mr-0"

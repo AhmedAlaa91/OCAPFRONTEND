@@ -21,7 +21,7 @@ import styled from 'styled-components' ;
 function Footer() {
   return (
     <Foot>
-    <footer className="footer bg-dark navbar-dark sticky-bottom">
+    <footer className="footer bg-dark navbar-dark">
     
     <div className="container-xxl footer-terms">
       <ul className="navbar-nav gap-md-3">
