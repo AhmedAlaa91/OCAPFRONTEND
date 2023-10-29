@@ -1,7 +1,8 @@
-import {render , screen , waitFor} from '@testing-library/react';
+import {render , screen } from '@testing-library/react';
 import CarDisplay  from '../CarDisplay';
 import userEvent from "@testing-library/user-event";
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
+
 describe('Testing Car Display Components',()=>{
    
     test('Test Render Slide',()=>{

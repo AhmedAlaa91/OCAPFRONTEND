@@ -1,9 +1,39 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="0" lines-covered="0" line-rate="NaN" branches-valid="0" branches-covered="0" branch-rate="NaN" timestamp="1698158669800" complexity="0" version="0.1">
+<coverage lines-valid="10" lines-covered="10" line-rate="1" branches-valid="2" branches-covered="2" branch-rate="1" timestamp="1698598006872" complexity="0" version="0.1">
   <sources>
     <source>D:\React\ocap-fe</source>
   </sources>
   <packages>
+    <package name="main" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="CarDisplay.jsx" filename="src\components\cars\CarDisplay.jsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="CarDisplay" hits="4" signature="()V">
+              <lines>
+                <line number="17" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="3" signature="()V">
+              <lines>
+                <line number="180" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="4" branch="false"/>
+            <line number="75" hits="1" branch="false"/>
+            <line number="81" hits="1" branch="false"/>
+            <line number="96" hits="1" branch="false"/>
+            <line number="138" hits="1" branch="false"/>
+            <line number="146" hits="1" branch="false"/>
+            <line number="154" hits="1" branch="false"/>
+            <line number="166" hits="1" branch="false"/>
+            <line number="178" hits="1" branch="false"/>
+            <line number="181" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
   </packages>
 </coverage>

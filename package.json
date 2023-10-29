@@ -25,7 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --testMatch **/src/**/*.test.js  --verbose --coverage --coverageDirectory=output/coverage/jest",
+    "test": "react-scripts test --testMatch **/src/**/*.test.js --silent --verbose --coverage --coverageDirectory=output/coverage/jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -57,10 +57,7 @@
       "!src/index.js"
     ],
     "coverageReporters": [
-      "text"
-    ],
-    "moduleNameMapper": {
-      "#(.*)": "<rootDir>/node_modules/$1"
-    }
+      "text","cobertura"
+    ]
   }
 }

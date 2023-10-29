@@ -5,7 +5,7 @@ tools {
     nodejs 'Node'
   }
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
         
           echo ' Installing NPM'
@@ -19,6 +19,13 @@ tools {
           echo ' Runing Test'
           bat 'set CI=true && npm run test'
         
+      }
+            post {
+        always {
+          step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
+        }
+      
+
       }
     
     
