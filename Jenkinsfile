@@ -2,14 +2,14 @@
 pipeline {
     agent any
 tools {
-    nodejs 'node'
+    nodejs 'Node'
   }
   stages {
     stage('Build') {
       steps {
         
           echo ' Installing NPM'
-          sh 'npm install'
+          bat 'npm install'
         
       }
     }
@@ -17,7 +17,7 @@ tools {
       steps {
         
           echo ' Runing Test'
-          sh 'set CI=true && npm run test'
+          bat 'set CI=true && npm run test'
         
       }
             post {
